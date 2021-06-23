@@ -3,7 +3,7 @@
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 from solvayFactoryLinear import solvay_process
-from functionTester import belt_conveyor_power
+import functionTester as ft
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -18,8 +18,8 @@ if __name__ == '__main__':
     init_ammonia = {"NH3": 50} # volume?
     total_energy, total_CO2, total_light_soda_ash, total_calcium_chloride = solvay_process(brine, limestone, coke, init_ammonia) # 105.988 g Na2CO3 (1Mol)
     print(total_energy, total_CO2, total_light_soda_ash, total_calcium_chloride)
-    drive_HP = belt_conveyor_power(300, 1000, 0, 300, 0.885)
-    print (drive_HP)
+    extraction_rate_tonnes_per_day = ft.taylors_law(3500000, 250)
+    print(extraction_rate_tonnes_per_day)
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
