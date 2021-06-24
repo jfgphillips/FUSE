@@ -72,7 +72,8 @@ def solid_trona_mine():
         def load_hall_dump_vehicle():
             return np.nan
 
-        def shuttle_car():
+        def shuttle_car(miner_output, distance_to_conveyor):
+
             return np.nan
 
         def rail():

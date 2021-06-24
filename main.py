@@ -18,8 +18,12 @@ if __name__ == '__main__':
     init_ammonia = {"NH3": 50} # volume?
     total_energy, total_CO2, total_light_soda_ash, total_calcium_chloride = solvay_process(brine, limestone, coke, init_ammonia) # 105.988 g Na2CO3 (1Mol)
     print(total_energy, total_CO2, total_light_soda_ash, total_calcium_chloride)
-    extraction_rate_tonnes_per_day = ft.taylors_law(3500000, 250)
-    print(extraction_rate_tonnes_per_day)
+    ##extraction_rate_tonnes_per_day = ft.taylors_law(4000000, 250)
+    #print(extraction_rate_tonnes_per_day)
+    room_and_pillar = ft.machine_output_calc(2948350.405, 7)  # mine output in tonnes, number of miners
+    longwall = ft.machine_output_calc(3200000, 1)  # mine output in tonnes, number of miners
+    #print(output_per_miner)
+
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
