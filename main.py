@@ -22,6 +22,7 @@ if __name__ == '__main__':
     #print(extraction_rate_tonnes_per_day)
     room_and_pillar = calc.machine_output_calc(2948350.405, 7)  # mine output in tonnes, number of miners
     longwall = calc.machine_output_calc(3200000, 1)  # mine output in tonnes, number of miners
+    print("hello world")
     #print(output_per_miner)
 
 
