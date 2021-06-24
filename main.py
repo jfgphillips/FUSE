@@ -17,7 +17,7 @@ if __name__ == '__main__':
     coke = {"C": 100} # mass in grams
     init_ammonia = {"NH3": 50} # volume?
     total_energy, total_CO2, total_light_soda_ash, total_calcium_chloride = solvay_process(brine, limestone, coke, init_ammonia) # 105.988 g Na2CO3 (1Mol)
-    print(total_energy, total_CO2, total_light_soda_ash, total_calcium_chloride)
+    #print(total_energy, total_CO2, total_light_soda_ash, total_calcium_chloride)
     ##extraction_rate_tonnes_per_day = ft.taylors_law(4000000, 250)
     #print(extraction_rate_tonnes_per_day)
     room_and_pillar = calc.machine_output_calc(2948350.405, 7)  # mine output in tonnes, number of miners

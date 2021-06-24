@@ -6,7 +6,7 @@ def solvay_process(brine, limestone, coke, init_ammonia):  # maybe a brine with 
 
     def ammonia_saturator(brine, ammonia, temperature, time):  # step 1
         saturated_soln = [brine, ammonia]  # list with concentrations of each
-        print(saturated_soln)
+        #print(saturated_soln)
         energy_units = np.nan
 
         return energy_units, saturated_soln
