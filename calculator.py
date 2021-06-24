@@ -30,9 +30,9 @@ def taylors_law(expected_reserves, days_per_year):
     return rate
 
 
-def power_consumption(motor_HP, running_load, nameplate_rating, per_unit_run_time, per_unit_time, op_hrs):
+def power_consumption(motor_kW, running_load, nameplate_rating, per_unit_run_time, per_unit_time, op_hrs):
     """
-    :param motor_HP: engine horse power
+    :param motor_kW: engine horse power
     :param running_load: how much the unit is carrying
     :param nameplate_rating: max operating rating
     :param per_unit_run_time: how much the unit is being run
@@ -41,7 +41,7 @@ def power_consumption(motor_HP, running_load, nameplate_rating, per_unit_run_tim
 
     :return: unit_energy_consumption: Energy/month (kW hours)
     """
-    motor_kW = motor_HP * 0.746  # conversion factor HP -> kW
+    # motor_kW = motor_HP * 0.746  # conversion factor HP -> kW
     load_factor = running_load/nameplate_rating  # what capacity is equipment being used
     utilisation_factor = per_unit_run_time/per_unit_time
     unit_energy_consumption = motor_kW * load_factor * utilisation_factor * op_hrs  # standardised value
@@ -73,5 +73,6 @@ def belt_conveyor_power(belt_speed, belt_length, gradient, conveyor_output, driv
     H = H_g + H_f  # total lift, H = gradient + length/speed table (.csv file)
     belt_HP = (Q * H) / 33000  # conversion to horse power
     drive_HP = belt_HP / drive_train_efficiency
+    drive_kW = drive_HP * 0.746
 
-    return drive_HP
+    return drive_kW
