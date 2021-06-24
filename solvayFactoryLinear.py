@@ -65,15 +65,15 @@ def solvay_process(brine, limestone, coke, init_ammonia):  # maybe a brine with 
 
     for i in range(0, 10, 1):  # how many repeats?
 
-        print(i)
+        #print(i)
 
         if ammonia["NH3"] == 0:
             ammonia = init_ammonia
-            print("this is init ammonia", ammonia)
+            #print("this is init ammonia", ammonia)
 
         else:
             ammonia = ammonia
-            print("this is the recycled ammonia", ammonia)
+            #print("this is the recycled ammonia", ammonia)
 
         E_ammonia_sat, solvay_precursor = ammonia_saturator(brine, ammonia, 100, 30)
 

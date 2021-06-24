@@ -3,7 +3,7 @@
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 from solvayFactoryLinear import solvay_process
-import functionTester as ft
+import calculator as calc
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -20,8 +20,8 @@ if __name__ == '__main__':
     print(total_energy, total_CO2, total_light_soda_ash, total_calcium_chloride)
     ##extraction_rate_tonnes_per_day = ft.taylors_law(4000000, 250)
     #print(extraction_rate_tonnes_per_day)
-    room_and_pillar = ft.machine_output_calc(2948350.405, 7)  # mine output in tonnes, number of miners
-    longwall = ft.machine_output_calc(3200000, 1)  # mine output in tonnes, number of miners
+    room_and_pillar = calc.machine_output_calc(2948350.405, 7)  # mine output in tonnes, number of miners
+    longwall = calc.machine_output_calc(3200000, 1)  # mine output in tonnes, number of miners
     #print(output_per_miner)
 
 
