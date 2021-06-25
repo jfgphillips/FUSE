@@ -4,6 +4,7 @@
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 from solvayFactoryLinear import solvay_process
 import calculator as calc
+import mineInitiator as mI
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -22,6 +23,9 @@ if __name__ == '__main__':
     #print(extraction_rate_tonnes_per_day)
     room_and_pillar = calc.machine_output_calc(2948350.405, 7)  # mine output in tonnes, number of miners
     longwall = calc.machine_output_calc(3200000, 1)  # mine output in tonnes, number of miners
+    data = mI.init_continuous_miner()
+    data_2 = mI.init_mine_attributes()
+
     #print(output_per_miner)
 
 
