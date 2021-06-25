@@ -18,7 +18,7 @@ class continuousMiner_att:
     def __init__(self):
         self.df = pd.read_excel(r'data/mine_attributes.xlsx', sheet_name="continuous miner", skiprows=1)
         self.df.set_index('key', inplace=True)
-        print(self.df.index)
+        # print(self.df.index)
         self.production_output = self.df['value'].loc["production output"]
         self.usage = self.df['value'].loc["usage"]
         self.maintenance = self.df['value'].loc["maintenance"]
