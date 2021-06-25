@@ -25,13 +25,21 @@ def solid_trona_mine():
 
             return np.nan
 
+        def shuttle_car(miner_output, distance_to_conveyor):
+
+            return np.nan
+
         def ventilation():
             return np.nan
 
-    def room_and_pillar_method(miner_att, shuttle_att, bolter_att, LHD_att, workers_att):
-        power_consumption = miner_power + shuttle_power +
+    def room_and_pillar_method():
+        def continuous_borer_miner():
+            return np.nan
 
-        return
+        def roof_bolter():
+            return np.nan
+
+        return np.nan
 
     def longwall_method():
         def longwall_miner():
@@ -40,9 +48,11 @@ def solid_trona_mine():
         def hydraulic_supports():
             return np.nan
 
-    def cont_haulage(belt_coveyor_att, skip_hoist_att, workers_att):
-        belt_conveyor_power = 0
-        skip_hoist_power = 0
-        power_consumption = belt_conveyor_power + skip_hoist_power
+    def ramp_access():
+        def inclined_conveyor():
+            return np.nan
 
-    return
+        def road_commute():
+            return np.nan
+
+    return np.nan
