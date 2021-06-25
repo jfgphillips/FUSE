@@ -13,10 +13,10 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    brine = {"NaCl": 116.88, "H2O": 100, "volume": 100} # volume in cm3
-    limestone = {"CaCO3": 100.086} # mass in grams
+    brine = {"NaCl": 116.88, "H2O": 100, "volume": 100}  # volume in cm3
+    limestone = {"CaCO3": 100.086}  # mass in grams
     coke = {"C": 100} # mass in grams
-    init_ammonia = {"NH3": 50} # volume?
+    init_ammonia = {"NH3": 50}  # volume?
     total_energy, total_CO2, total_light_soda_ash, total_calcium_chloride = solvay_process(brine, limestone, coke, init_ammonia) # 105.988 g Na2CO3 (1Mol)
     #print(total_energy, total_CO2, total_light_soda_ash, total_calcium_chloride)
     ##extraction_rate_tonnes_per_day = ft.taylors_law(4000000, 250)
